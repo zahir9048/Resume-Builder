@@ -14,8 +14,23 @@ body {
   background-color: var(--dark_blue);
 }
 
+
+.button{
+  display: flex;
+  justify-content: center;
+}
+
+.button a{
+  background-color: var(--dark_blue);
+  color: var(--white);
+  border-radius: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
 h2 {
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .main {
@@ -96,4 +111,29 @@ h2 {
 
 .main .work ul li span {
   font-weight: 600;
+}
+
+.main-form .field {
+  display: flex;
+}
+
+.main-form .information-container .field_parent .field p {
+  min-width: 120px;
+}
+
+.main-form .information-container .field_parent .field {
+  width: 50%;
+  margin-block: 10px;
+}
+
+.main-form .information-container .field_parent .field input {
+  border-radius: 15px;
+  border: none;
+  padding: 10px 10px;
+}
+
+.main-form .information-container .field_parent .field textarea {
+  width: 175px;
+  min-width: 175px;
+  max-width: 175px;
 }
