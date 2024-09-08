@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic Resume Builder</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
     <div class="main main-form">
 
 
-        <form action="">
+        <form id="resumeForm">
             <div class="logo-parent">
                 <p>Upload Your Image</p>
                 <div class="img-upload">
-                    <input type="file" id="myFile" name="filename" required>
+                    <input type="file" id="myFile" name="filename" accept="image/*" required>
                 </div>
             </div>
 
@@ -26,19 +26,19 @@
                     <div class="fields">
                         <div class="field">
                             <p><span>Name: </span></p>
-                            <input type="text" placeholder="Enter Your Name" required>
+                            <input type="text" id="name" placeholder="Enter Your Name" required>
                         </div>
                         <div class="field">
                             <p><span>Age: </span></p>
-                            <input type="number" placeholder="Enter Your Age" required>
+                            <input type="number" id="age" placeholder="Enter Your Age" required>
                         </div>
                         <div class="field">
                             <p><span>Father Name: </span></p>
-                            <input type="text" placeholder="Enter Your Father Name" required>
+                            <input type="text" id="fatherName" placeholder="Enter Your Father Name" required>
                         </div>
                         <div class="field">
                             <p><span>Address: </span></p>
-                            <input type="text" placeholder="Enter Your Address" required>
+                            <input type="text" id="address" placeholder="Enter Your Address" required>
 
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                     
                     <div class="field">
                         <p><span>Enter Skills (Comma Seperated): </span></p>
-                        <textarea name="skills" id="skills" rows="3" placeholder="Enter Your Skills..."></textarea>
+                        <textarea class="cust-txt-area" name="skills" id="skills" rows="3" placeholder="Enter Your Skills..."></textarea>
                     </div>
                 </div>
                 <div class=" field_parent work">
@@ -78,9 +78,14 @@
 
                     <div class="field">
                         <p><span>Enter Work Experince (Comma Seperated): </span></p>
-                        <textarea name="work-exp" id="work-exp" rows="3" placeholder="Enter Your Work Exp..."></textarea>
+                        <textarea class="cust-txt-area" name="work-exp" id="workExp" rows="3" placeholder="Enter Your Work Exp..."></textarea>
                     </div>
                 </div>
+            </div>
+
+            <div class="submit-btn">
+                <a class="button2" href="./index.html">Back</a>
+                <input class="button2" type="submit" value="Generate Resume">
             </div>
         </form>
 
@@ -88,6 +93,7 @@
         
 
     </div>
-    <script src="./toggle.js"></script>
+    <script src="./js/toggle.js"></script>
+    <script src="./js/form-handler.js"></script>
 </body>
 </html>
