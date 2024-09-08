@@ -38,9 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const savePdfButton = document.querySelector('button[type="button"]') as HTMLButtonElement;
+  const savePdfButton = document.querySelector('.pdf-btn') as HTMLButtonElement;
   savePdfButton.addEventListener("click", () => {
-    
     window.print();
   });
 });

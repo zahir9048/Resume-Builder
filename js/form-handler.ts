@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
       workExp: (document.getElementById("workExp") as HTMLTextAreaElement).value,
     };
 
+    console.log(resumeData);
+
     const file = fileInput.files ? fileInput.files[0] : null;
 
     if (file) {

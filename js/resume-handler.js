@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             userImage.src = data.image;
         }
     }
-    var savePdfButton = document.querySelector('button[type="button"]');
+    var savePdfButton = document.querySelector('.pdf-btn');
     savePdfButton.addEventListener("click", function () {
         window.print();
     });
