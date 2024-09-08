@@ -37,4 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
       userImage.src = data.image;
     }
   }
+
+  const savePdfButton = document.querySelector('button[type="button"]') as HTMLButtonElement;
+  savePdfButton.addEventListener("click", () => {
+    
+    window.print();
+  });
 });

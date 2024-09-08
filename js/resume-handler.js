@@ -28,4 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
             userImage.src = data.image;
         }
     }
+    var savePdfButton = document.querySelector('button[type="button"]');
+    savePdfButton.addEventListener("click", function () {
+        window.print();
+    });
 });
